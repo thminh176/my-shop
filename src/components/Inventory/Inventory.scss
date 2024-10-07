@@ -1,0 +1,30 @@
+.inventory-page {
+  padding: 20px;
+
+  .shelves {
+    display: flex;
+    justify-content: space-around;
+
+    .shelf {
+      border: 1px solid #ccc;
+      padding: 10px;
+      flex: 1;
+      margin-right: 10px;
+      &:last-child {
+        margin-right: 0;
+      }
+
+      .items-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+
+        .item {
+          border: 1px solid #ddd;
+          padding: 5px;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
